@@ -6,10 +6,47 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>INFO 1998 - Assignment 1</title>
     <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
+    <div id="wrapper">
+        <nav>
+            <ul id="navigation">
+                <li><a href="#name" id="name-nav">Name</a></li>
+                <li><a href="#major" id="major-nav">Major</a></li>
+                <li><a href="#year" id="year-nav">Year</a></li>
+                <li><a href="#forward" id="forward-nav">Looking Forward</a></li>
+            </ul>
+        </nav>
+        
+        <div id="container">
+            <div id="name" class="question">
+                <h1>What's my name?</h1>
+                <p>Call me Will!</p>
+            </div>
 
+            <div id="major" class="question hidden">
+                <h1>What's my major?</h1>
+                <p>I am a sophomore studying Computer Science in the school of Arts and Sciences.</p>
+            </div>
+            
+            <div id="year" class="question hidden">
+                <h1>What's my year?</h1>
+                <p>I am graduating in 2021.</p>
+            </div>
+            
+            <div id="forward" class="question hidden">
+                <h1>What am I looking forward to most in this class?</h1>
+                <p>To learn the magic behind Facebook's React.js!</p>
+            </div>
+        </div>
+    </div>
+    
+    <span class="arrow" id="left-arrow" onclick="slideLeft()">&#10094;</span>
+    <span class="arrow" id="right-arrow" onclick="slideRight()">&#10095;</span>
+    
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>
