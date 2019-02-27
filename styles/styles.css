@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    /* background-color: #224870; */
-    /* color: white; */
+    background-color: #F1F1F2;
+    color: #224870;
     /* https://coolors.co/122c34-224870-2a4494-4ea5d9-44cfcb */
 }
 
@@ -42,7 +42,7 @@ nav ul li {
 
 a {
     position: relative;
-    color: black;
+    color: #122C34;
     text-decoration: none;
 }
 
@@ -53,21 +53,17 @@ a:before {
     height: 3px;
     bottom: 0;
     left: 0;
-    background-color: black;
+    background-color: #122C34;
     transform: scaleX(0);
     transition: all 0.2s ease-in-out 0s;
 }
 
 a:hover {
-    color: black;
     cursor: pointer;
 }
 
 a:hover:before {
     transform: scaleX(1);
-}
-a:visited {
-    color: black;
 }
 
 h1 {
@@ -140,7 +136,7 @@ p {
     width: 50px;
     font-size: 70px;
     border: none;
-    background-color: white;
+    color: #122C34;
     text-decoration: none;
     text-align: center;
     line-height: 80px;
