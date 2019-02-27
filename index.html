@@ -13,10 +13,10 @@
     <div id="wrapper">
         <nav>
             <ul id="navigation">
-                <li><a href="#name" id="name-nav">Name</a></li>
-                <li><a href="#major" id="major-nav">Major</a></li>
-                <li><a href="#year" id="year-nav">Year</a></li>
-                <li><a href="#forward" id="forward-nav">Looking Forward</a></li>
+                <li><a onclick="goTo('name')">Name</a></li>
+                <li><a onclick="goTo('major')">Major</a></li>
+                <li><a onclick="goTo('year')">Year</a></li>
+                <li><a onclick="goTo('forward')">Looking Forward</a></li>
             </ul>
         </nav>
         
@@ -42,9 +42,9 @@
             </div>
         </div>
     </div>
-    
-    <span class="arrow" id="left-arrow" onclick="slideLeft()">&#10094;</span>
-    <span class="arrow" id="right-arrow" onclick="slideRight()">&#10095;</span>
+
+    <span class="arrow" id="left-arrow" onclick="slide('left')">&#10094;</span>
+    <span class="arrow" id="right-arrow" onclick="slide('right')">&#10095;</span>
     
     <script type="text/javascript" src="js/index.js"></script>
 </body>

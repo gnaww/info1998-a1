@@ -60,6 +60,7 @@ a:before {
 
 a:hover {
     color: black;
+    cursor: pointer;
 }
 
 a:hover:before {
