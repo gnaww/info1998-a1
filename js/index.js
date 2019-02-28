@@ -15,6 +15,7 @@ function checkKey(event) {
         slide('right');
     }
 }
+
 function goTo(question) {
     if (question === 'name') {
         if (questionIndex !== 0) {

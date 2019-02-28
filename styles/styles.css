@@ -24,6 +24,7 @@ body {
 nav {
     width: 80%;
     margin: 20px auto;
+    transition: all 0.5s;
 }
 
 nav ul {
@@ -38,6 +39,18 @@ nav ul li {
     display: inline;
     font-size: 40px;
     padding: 8px;
+    animation: slide-up 0.4s ease;
+}
+
+@keyframes slide-up {
+    0% {
+        /* opacity: 0; */
+        transform: translateY(20px);
+    }
+    100% {
+        /* opacity: 1; */
+        transform: translateY(0);
+    }
 }
 
 a {
