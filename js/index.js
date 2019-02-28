@@ -2,6 +2,19 @@ let questionIndex = 0;
 let questionMaxIndex = 3;
 let questionIdArray = ['name', 'major', 'year', 'forward'];
 
+document.addEventListener("DOMContentLoaded", main);
+document.onkeydown = checkKey;
+
+function checkKey(event) {
+    if (event.keyCode == '37') {
+        // left arrow
+        slide('left');
+    }
+    else if (event.keyCode == '39') {
+        // right arrow
+        slide('right');
+    }
+}
 function goTo(question) {
     if (question === 'name') {
         if (questionIndex !== 0) {
@@ -138,5 +151,3 @@ function addIceCream() {
     questionMaxIndex = 4;
     questionIdArray.push('ice');
 }
-
-document.addEventListener("DOMContentLoaded", main);
